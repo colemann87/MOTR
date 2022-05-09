@@ -1,0 +1,121 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+    <a href="#" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-xl">DVSA MOT Discovery</span>
+        <h1 class="govuk-heading-xl">Camera's in garages</h1>
+
+        <div class="index-view-proto">
+          <h2 class="govuk-heading-m">Latest prototype for testing <strong class="govuk-tag govuk-tag--blue">
+  V.2.1
+</strong></h2>
+
+
+          <a href="version-2-1/happy/start.html" class="govuk-button">Photo accepted</a>
+          <a href="version-2-1/unhappy/start.html" class="govuk-button govuk-button--secondary">Photo rejected</a>
+          <a href="version-2/sandbox/no-results-found.html" class="govuk-button govuk-button--secondary">No results</a>
+
+          <p>Camera function will use the device’s native state. </p>
+          <p>On laptop, the user will be prompted to upload a photo, on phone / tablet the user will be prompted to take a picture. </p>
+
+        </div>
+
+        <h2 class="govuk-heading-m">History</h2>
+
+        <p>Previous user journeys for testing, highlighting the main differences.</p>
+
+        <p>Full design tracking can be <a href="https://lucid.app/lucidspark/e132bbfe-2466-48a5-9cdb-17d1fbe55c7a/edit?viewport_loc=8788%2C-3513%2C324%2C178%2C0_0&invitationId=inv_7c889dd8-36c6-4fb9-8cc9-2c8b58b5ee01" class="govuk-link">found here.</a></p>
+
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Version 2
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+
+            <h3 class="govuk-heading-s">Version 2.1</h3>
+
+            <p class="govuk-body"><a href="version-2-1/happy/start.html" class="govuk-link">Happy path</a>   |   <a href="version-2-1/unhappy/start.html" class="govuk-link">Unhappy path</a></p>
+
+            <p class="govuk-body">Differences:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>Bringing back the photo accepted step in the journey</li>
+              <li>Minor content improvements</li>
+              <li>Using the <a href="version-2/sandbox/vin-check-basic.html" class="govuk-link">basic option</a> for VIN check</li>
+              <li>Report an error - <a href="version-2-1/feedback-2.html" class="govuk-link">free text field option</a>, <a href="version-2-1/feedback.html" class="govuk-link">radio buttons option</a></li>
+            </ul>
+
+
+            <h3 class="govuk-heading-s">Version 2</h3>
+
+            <p class="govuk-body"><a href="version-2/happy/start.html" class="govuk-link">Happy path</a> | <a href="version-2/unhappy/start.html" class="govuk-link">Unhappy path</a></p>
+
+            <p class="govuk-body">Differences:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>Link to manual process if photo fails</li>
+              <li>Consider what happens if there are <a href="version-2/sandbox/no-results-found.html" class="govuk-link">no results found</a></li>
+              <li>Consider what happens if the wrong vehicle is found</li>
+              <li>MVP - do not need to play back image to user</li>
+              <li>Consider VIN prompt - <a href="version-2/sandbox/vin-check-basic.html" class="govuk-link">basic option</a>, <a href="version-2/sandbox/vin-check-complex.html" class="govuk-link">complex option</a></li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Version 1
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+
+            <h3 class="govuk-heading-s">Version 1.2</h3>
+
+            <p class="govuk-body"><a href="version-1/happy/start.html" class="govuk-link">Happy path</a> | <a href="version-1/happy/start.html" class="govuk-link">Unhappy path</a></p>
+
+            <p class="govuk-body">Differences:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>Moving to coded prototype</li>
+              <li>Content update for photo guidelines</li>
+              <li>Content to inform the user they can continue on desktop</li>
+              <li>Ability to take photo on the users phone</li>
+            </ul>
+
+            <h3 class="govuk-heading-s">Version 1</h3>
+
+            <p>Initial invision prototype.</p>
+
+            <p><a href="https://alex383529.invisionapp.com/console/share/252ZYU2QTM/756859498" class="govuk-link">Version 1</a></p>
+
+          </div>
+        </details>
+
+
+
+
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,83 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-l">View your reminders</h1>
+
+
+
+
+        <h2 class="govuk-heading-m">MOT Reminders for jane.doe@gmail.com:</h2>
+
+        <table class="govuk-table">
+  <thead class="govuk-table__head">
+
+    <p class="govuk-body"><a href="">Check another reminder</a></p>
+
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Vehicle</th>
+      <td class="govuk-table__cell"><strong class="govuk-table__header">MOT Expiry Date</strong></td>
+      <td class="govuk-table__cell govuk-table__cell-right"><a href=""></a></td>
+      <td class="govuk-table__cell govuk-table__cell-right"><a href=""></a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">BC12 BCD</th>
+      <td class="govuk-table__cell"><strong class="govuk-body">25.08.2022</strong></td>
+      <td class="govuk-table__cell govuk-table__cell-right"><a href="">Change</a></td>
+      <td class="govuk-table__cell govuk-table__cell-right"><a href="unsubscribe-email">Unsubscribe</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">CD12 CDE</th>
+      <td class="govuk-table__cell"><strong class="govuk-body">19.10.2022</strong></td>
+      <td class="govuk-table__cell govuk-table__cell-right"><a href="">Change</a></td>
+      <td class="govuk-table__cell govuk-table__cell-right"><a href="unsubscribe-email">Unsubscribe</a></td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+  <br>
+
+<p class="govuk-body"><a href="">Set up a new reminder</a></p>
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <p>For more information relating to a specific vehicle, click to <a href="">view MOT History</a>.</p>
+
+  </div>
+</div>
+
+      </div>
+    </div>
+
+
+  </main>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

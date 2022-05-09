@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">View your reminders</h1>
+
+      <p><a href="#">Check another reminder</a></p>
+
+    </div>
+  </div>
+
+  <!-- <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+
+      <span class="govuk-caption-m">Vehicle</span>
+      <h1 class="govuk-heading-m">FORD FIESTA</h1>
+
+    </div>
+
+  </div> -->
+
+
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-quarter">
+
+      <span class="govuk-caption-m">Vehicle</span>
+      <p class="govuk-body govuk-!-font-weight-bold">FORD FIESTA</p>
+
+    </div>
+
+    <div class="govuk-grid-column-one-quarter">
+
+      <span class="govuk-caption-m" style="margin-bottom:5px;">Registration number</span>
+
+      <p><span><strong>
+        CU57&nbsp;ABC</strong>
+      </span></p>
+
+    </div>
+
+    <div class="govuk-grid-column-one-quarter">
+
+      <span class="govuk-caption-m">Fuel type</span>
+      <p class="govuk-body govuk-!-font-weight-bold">Petrol</p>
+
+    </div>
+
+    <div class="govuk-grid-column-one-quarter">
+
+      <span class="govuk-caption-m">Colour</span>
+      <p class="govuk-body govuk-!-font-weight-bold"><span class="colour-box">Re</span>Red</p>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <span class="govuk-caption-m">MOT valid until </span>
+      <h1 class="govuk-heading-m">17 June 2022</h1>
+
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div class="car-details">
+
+        <p class="govuk-body">2 tests, last tested 17 June 2021</p>
+
+        <p><a href="">View MOT history</a></p>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <p>If you think the MOT expiry date or any of the vehicle details are wrong <a href="">contact DVSA</a>.</p>
+
+    </div>
+  </div>
+
+
+
+
+{% endblock %}

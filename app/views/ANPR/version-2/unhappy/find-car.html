@@ -1,0 +1,277 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+<script>
+
+
+  var loadFileFail = function(event) {
+    var image = document.getElementById('output');
+    image.src = URL.createObjectURL(event.target.files[0]);
+
+    var x = document.getElementById("myDIVFail");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+    var x = document.getElementById("hide-top-header");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+
+    var x = document.getElementById("hide-help");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+
+  };
+
+
+
+
+
+
+
+  var loadFile = function(event) {
+    var image = document.getElementById('output');
+    image.src = URL.createObjectURL(event.target.files[0]);
+
+    var x = document.getElementById("output");
+    if (x.style.display === "none") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+    var x = document.getElementById("myDIVFail");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+
+    var x = document.getElementById("hide-top-header");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+
+    var x = document.getElementById("open-camera-button");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+
+    var x = document.getElementById("hide-help");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+
+  };
+
+
+</script>
+
+
+
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+
+        <div id="hide-top-header">
+          <span class="govuk-caption-l">MOT testing</span>
+          <h1 class="govuk-heading-l">Find a vehicle</h1>
+
+          <p class="govuk-body">Take a photo of the vehicle Registration number using a smartphone or tablet. </p>
+
+          <p class="govuk-body">You can continue the test on your desktop after.</p>
+
+
+
+
+
+          <input type="file"  accept="image/*" name="image" id="file-fail"  onchange="loadFileFail(event)" style="display: none;">
+
+          <label id="open-camera-button-fail" for="file-fail" class="govuk-button" onchange="gotopageFail(this)">Take photo</label>
+
+          <!-- <p><img id="output" width="200" /></p> -->
+
+        </div>
+
+        <!-- Photo success -->
+
+        <div id="myDIV" style="display: none;">
+
+          <span class="govuk-caption-l">MOT testing</span>
+          <h1 class="govuk-heading-l">Vehicles found</h1>
+
+          <p class="number"><span>1</span> vehicle found</p>
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+
+              <span class="govuk-caption-m">Vehicle</span>
+              <h1 class="govuk-heading-m">FORD FIESTA</h1>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-third">
+
+              <span class="govuk-caption-m" style="margin-bottom:5px;">Registration number</span>
+
+              <p><span class="reg-mark" style="font-size:200%;margin-right:0.6em">
+                CU57&nbsp;ABC
+              </span></p>
+
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+
+              <span class="govuk-caption-m">VIN</span>
+              <p class="govuk-body govuk-!-font-weight-bold">CBAAAAAAAAA0000028</p>
+
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+
+              <span class="govuk-caption-m">Colour</span>
+              <p class="govuk-body govuk-!-font-weight-bold"><span class="colour-box">Re</span>Red</p>
+
+            </div>
+          </div>
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+
+              <div class="car-details">
+
+                <p class="govuk-body">2 tests, last tested 16 January 2021</p>
+
+                <a href="confirm-car" class="govuk-button">Select vehicle</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+
+
+              <p><a href="find-car" class="govuk-link">Search again</a></p>
+
+            </div>
+          </div>
+
+          <div class="image">
+          <p><img id="output" style="width: 100%;max-width: 600px;height: auto;" /></p>
+          </div>
+
+        </div>
+
+        <!-- End of photo success -->
+
+
+        <!-- Photo fail -->
+
+        <div id="myDIVFail" style="display: none;">
+
+          <span class="govuk-caption-l">MOT testing</span>
+          <h1 class="govuk-heading-l">You need to take another photo</h1>
+
+          <p class="govuk-body">This photo has failed our automated checks for the following reason: </p>
+
+          <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">X</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Warning</span>
+              The Registration number is not clear
+              <p class="govuk-caption-m">We’re having problems with your photo. Please take another one</p>
+            </strong>
+          </div>
+
+          <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
+
+          <label id="open-camera-button" for="file" class="govuk-button" onchange="gotopage(this)">Take a new photo</label>
+
+          <p><a href="manual-entry" class="govuk-link">Or enter the registration number and vehicle identification number (VIN) manually </a></p>
+
+
+        </div>
+
+        <!-- End of photo fail -->
+
+        <div id="hide-help">
+          <p class="govuk-body">Make sure the photo:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>shows the registration number of the vehicle clearly</li>
+            <li>shows the full front or back of the vehicle</li>
+            <li>does not include any other vehicles </li>
+            <!-- <li>does not show any people</li> -->
+          </ul>
+
+          <!-- <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+          Help taking a photo
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+      Something, something
+    </div>
+  </details> -->
+
+
+
+  <p><a href="manual-entry" class="govuk-link">Or enter the registration number and vehicle identification number (VIN) manually </a></p>
+</div>
+<p><a href="start.html" class="govuk-link">Cancel and return home </a></p>
+
+</div>
+</div>
+
+</main>
+</div>
+
+
+
+
+
+
+{% endblock %}

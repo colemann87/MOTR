@@ -1,0 +1,120 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<!-- <script type="text/javascript">
+
+// function gotopage(selval){
+// var value = selval.options[selval.selectedIndex].value;
+// window.location.href="https://www.google.com";
+// }
+
+
+function gotopage{
+  window.location.href = "http://www.w3schools.com";
+}
+
+document.getElementById("myButton").onclick = function () {
+        location.href = "http://www.w3schools.com";
+
+</script> -->
+
+<script>
+            (function() {
+                // auto-submit when a file is selected
+                var button = document.getElementById("photo-label");
+                var file = document.getElementById("photo");
+                var filename = document.getElementById("photo-filename");
+                var submit = document.getElementById("photo-submit-button");
+                file.onchange = function() {
+                    filename.name = "photo";
+                    filename.value = file.value;
+                    file.name = "photo-file"
+                    file.value = "";
+                    submit.click();
+                };
+                // hide submit button, file upload, and make upload label look like a submit button
+                file.className = file.className + " govuk-visually-hidden";
+                submit.className = submit.className + " govuk-visually-hidden";
+                button.className = button.className + " govuk-button photo-button";
+            })();
+        </script>
+
+<!-- <h3>Onchange Redirect Script</h3>
+<select onchange="gotopage(this)">
+<option value="">Select</option>
+<option value="https://www.google.com">Google</option>
+<option value="https://www.yahoo.com">Yahoo</option>
+<option value="https://www.msn.com">MSN</option>
+</select> -->
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <span class="govuk-caption-l">MOT testing</span>
+      <h1 class="govuk-heading-l">Find a vehicle</h1>
+
+      <p class="govuk-body">Take a photo of the vehicle Registration number using a smartphone or tablet. </p>
+
+      <p class="govuk-body">Make sure the photo:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>shows the Registration number of the vehicle </li>
+          <li>shows the vehicle Registration number clearly </li>
+          <li>does not include any other vehicles </li>
+        </ul>
+
+
+         <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile">
+
+
+
+        <!-- <div id="photo-photo-choose-file-group" class="form-group">
+    <label for="photo-choose-file" class="button photo-upload-label" role="button">
+        <span id="photo-label-text">Upload your photo</span>
+    </label>
+    <input type="file" accept="image/jpeg" onchange="form.submit()" id="photo-choose-file" class="govuk-button photo-choose-file" name="photo-choose-file" aria-controls="progress-container" aria-required="true">
+</div> -->
+
+
+
+<!-- <input type="file"  accept="image/*" name="image" id="file"  onchange="gotopage(this)" style="display: none;">
+  <p>
+    <label for="file" class="govuk-button" onchange="gotopage(this)">Upload Image</label>
+  </p> -->
+
+  <!-- <input type="file"  accept="image/*" name="image" id="file"  onchange="myButton" style="display: none;">
+    <p>
+      <label for="file" class="govuk-button" onchange="myButton">Upload eweImage</label>
+    </p>
+
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Help taking a photo
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            Something, something
+          </div>
+        </details> -->
+
+        <p><a href="#" class="govuk-link">Enter vehicle Registration number and vehicle identification number (VIN) manually </a></p>
+
+        <p><a href="#" class="govuk-link">Cancel and return home </a></p>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

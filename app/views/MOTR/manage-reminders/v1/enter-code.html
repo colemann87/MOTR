@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="interrupt" method="post">
+
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+              Enter code
+            </label>
+          </h1>
+
+          <p>We sent you a text message with a 5-digit activation code, which expires in 24h. Enter the code on this page to view your reminder. </p>
+
+          <div class="govuk-form-group">
+            <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="account-number">
+                Your activation code
+              </label>
+            </h2>
+            <input class="govuk-input govuk-input--width-10" id="account-number" name="account-number" type="text" spellcheck="false" >
+          </div>
+
+        </div>
+
+        <p><a href="your-reminders" class="govuk-button">Continue</a></p>
+
+      </form>
+
+      <p><a href="#">Text didn’t arrive? </a></p>
+
+    </div>
+  </div>
+
+{% endblock %}

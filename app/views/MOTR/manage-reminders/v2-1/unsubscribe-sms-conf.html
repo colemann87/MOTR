@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link"><a href="sms-reminders">Back to View Reminders</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+
+
+          <h1 class="govuk-heading-l">You've unsubscribed</h1>
+
+
+          <p>You won't get any more MOT reminders at <strong>01234 567891</strong> for vehicle registration <stong>AB12 ABC</strong>.</p>
+
+        <p class="govuk-body"><a href="route-decision">Set up a new reminder</a></p>
+
+        <p>Help us improve the service - <a href="">tell us why you unsubscribed today</a>.</p>
+
+    </div>
+  </div>
+
+{% endblock %}

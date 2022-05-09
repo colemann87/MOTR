@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+
+
+          <h1 class="govuk-heading-l">One more step</h1>
+
+
+          <p>Check your inbox <strong>e***@****il.co.uk</strong> and click on the link in the email from GOV.UK to view your reminder.</p>
+
+          <div class="govuk-inset-text">
+            This link expires 24h from now.
+          </div>
+
+          <p><a href="#">Check another reminder</a></p>
+
+          <p><a href="email-reminders">I didnt get an email</a></p>
+
+      <p><a href="#"></a></p>
+
+    </div>
+  </div>
+
+{% endblock %}

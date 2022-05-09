@@ -1,0 +1,146 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <span class="govuk-caption-l">MOT testing</span>
+      <h1 class="govuk-heading-l">Confirm vehicle and start test</h1>
+
+      <p class="govuk-body">Check that you have the right vehicle before starting the test</p>
+
+      <div class="confirm-car-details">
+
+      <span class="govuk-caption-m">Vehicle</span>
+      <h1 class="govuk-heading-m">FORD FIESTA</h1>
+
+      <span class="govuk-caption-m">Registration number</span>
+      <br>
+      <p><span class="reg-mark" style="font-size:200%;margin-right:0.6em">
+        CU57&nbsp;ABC
+      </span></p>
+
+      <span class="govuk-caption-m">VIN</span>
+      <p class="govuk-body govuk-!-font-weight-bold">CBAAAAAAAAA0000028</p>
+
+      <span class="govuk-caption-m">Colour</span>
+      <p class="govuk-body govuk-!-font-weight-bold"><span class="colour-box">Re</span>Red</p>
+
+      <br>
+
+      <div class="vehicle-specification">
+
+      <h2 class="govuk-heading-m">Vehicle specification</h2>
+
+      <table class="govuk-table">
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Make and model
+          <p>FORD, FIESTA</p>
+        </th>
+          <td class="govuk-table__cell"><p><a href="#" class="govuk-link">Change</a></p></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Engine
+          <p>Petrol, 996</p>
+        </th>
+          <td class="govuk-table__cell"><p><a href="#" class="govuk-link">Change</a></p></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Colour
+          <p>Red</p>
+        </th>
+          <td class="govuk-table__cell"><p><a href="#" class="govuk-link">Change</a></p></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Brake test weight
+          <p>1075kg</p>
+        </th>
+          <td class="govuk-table__cell"><p><a href="#" class="govuk-link">Change</a></p></td>
+        </tr>
+
+
+
+
+        <tr class="govuk-table__row vehicle-registration">
+          <th scope="row" class="govuk-table__header">
+            <h2 class="govuk-heading-m">Vehicle registration</h2>
+        </th>
+
+        </tr>
+
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Registration number
+          <p>CU57&nbsp;ABC</p>
+        </th>
+          <td class="govuk-table__cell"><p><a href="#" class="govuk-link">Change</a></p></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">VIN
+          <p>Petrol, 996</p>
+        </th>
+          <td class="govuk-table__cell"><p><a href="#" class="govuk-link">Change</a></p></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Country of registration
+          <p>GB, UK, ENG, CMY, SCO (UK) - Great Britain</p>
+        </th>
+          <td class="govuk-table__cell"><p><a href="#" class="govuk-link">Change</a></p></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">MOT test class
+          <p>4</p>
+        </th>
+          <td class="govuk-table__cell"><p><a href="#" class="govuk-link">Change</a></p></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Vehicle category
+          <p>M1</p>
+        </th>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Date of first use
+          <p>26 July 2013</p>
+        </th>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">MOT expiration date
+          <p>20 January 2022</p>
+        </th>
+          <td class="govuk-table__cell"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+
+      <div>
+
+      <a href="confirm-car" class="govuk-button">Select vehicle</a>
+
+      <a href="confirm-car" class="govuk-button govuk-button--warning">Refuse to test</a>
+
+      </div>
+
+
+
+
+
+    <p><a href="#" class="govuk-link">Search again</a></p>
+
+    <p><a href="#" class="govuk-link">Cancel and return home </a></p>
+
+  </div>
+
+  </div>
+
+{% endblock %}

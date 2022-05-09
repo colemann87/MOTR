@@ -1,0 +1,304 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+$govuk-new-link-styles: true;
+
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import "lib/extensions/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/step-by-step-header";
+@import "patterns/step-by-step-nav";
+@import "patterns/step-by-step-related";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.govuk-phase-banner {
+  padding-top: 0px !important;
+  margin-bottom: 10px !important;
+}
+
+// Index page
+
+.index-view-proto {
+  border-bottom: 1px solid #BEC1C3;
+  margin-bottom: 20px;
+}
+
+// Start page
+
+.govuk-main-wrapper--auto-spacing {
+  padding-top: 15px !important
+}
+
+.purple-container {
+  padding-top: 30px;
+  background-color: #333385;
+  margin-left: -416px !important;
+  margin-right: -416px !important;
+  padding-left: 416px !important;
+  padding-right: 416px !important;
+}
+
+.top-container {
+  padding-top: 10px !important;
+  padding-bottom: 0px !important;
+}
+.purple-container {
+  position: relative;
+  height: auto;
+  .top-header {
+    background-color: #333385;
+
+    h1, h2 {
+      color: white;
+    }
+    .side-panel {
+      background-color: black;
+      // position: absolute;
+      padding: 20px;
+      height: 150px;
+      .side-panel-content {
+        a {
+          width: 100%;
+        }
+        }
+      }
+    }
+
+}
+
+
+
+  /* On screens that are 600px wide or less */
+  @media screen and (max-width: 600px) {
+    .top-header {
+      background-color: red;
+      height: auto;
+            h1, h2 {
+        color: white;
+      }
+      .side-panel {
+
+        padding: 20px;
+        height: auto;
+        margin-right: 0px !important;
+        .side-panel-content {
+          a {
+            width: 100%;
+          }
+          }
+        }
+      }
+  }
+
+.testing-stations {
+  border-top: 1px solid #BEC1C3;
+  border-bottom: 1px solid #BEC1C3;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  p{
+    margin-bottom: 5px !important;
+  }
+}
+
+// Select site
+
+  .select-site {
+    .govuk-radios__label {
+      font-weight: bold;
+    }
+  }
+
+// Find car
+
+  .open-camera {
+    margin-bottom: 20px;
+    a {
+      text-decoration: none;
+    }
+    border: 2px dashed black;
+    padding: 30px;
+    // p {
+    //   background-color: #1E70B8;
+    //   padding: 20px;
+    //   color: white;
+    //   margin-bottom: 0px !important;
+    // }
+  }
+
+  input[type="file"] {
+    display: none;
+}
+.camera-button {
+  background-color: #1E70B8;
+  color: white;
+  margin-bottom: 0px !important;
+  display: inline-block;
+  cursor: pointer;
+  padding: 20px;
+  margin-bottom: 0px !important;
+}
+
+.image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+// .govuk-warning-text__icon {
+//   background-color: #DF3034 !important;
+//   border-color: #DF3034 !important;
+// }
+//
+//
+// .govuk-warning-text {
+//   padding-top: 30px;
+// }
+
+
+// Select car
+
+.colour-box {
+    width: 100px;
+    height: 50px;
+    border-width: 2px;
+    border-color: #fff;
+    background-color: #D0021A;
+    color: #D0021A;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.colour-box-blue {
+    width: 100px;
+    height: 50px;
+    border-width: 2px;
+    border-color: #fff;
+    background-color: blue;
+    color: blue;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+// Confirm car
+
+.number {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #CCCFD1;
+  span {
+    font-weight: bold;
+  }
+}
+
+.reg-mark {
+padding-left: 10px;
+padding-right: 10px;
+background-color: #ffd307;
+border: 0.10em solid #333;
+font-size: 140%;
+border-radius: 0.25em;
+text-transform: uppercase;
+font-weight: bold;
+margin-top: 50px !important;
+}
+
+.car-details {
+  border-bottom: 1px solid #CCCFD1;
+  margin-bottom: 20px;
+  .vehicle-specification {
+    margin-top: 20px;
+  }
+  .vehicle-registration {
+    th{
+    border-bottom: none !important;
+    padding-top: 70px;
+  }
+  }
+}
+
+.confirm-car-details {
+  margin-bottom: 20px;
+  .vehicle-specification {
+    margin-top: 20px;
+  }
+  .vehicle-registration {
+    th{
+    border-bottom: none !important;
+    padding-top: 40px;
+  }
+  }
+}
+
+
+.custom-tag {
+  text-transform: none !important;
+}
+
+
+
+
+.interupt-panel {
+  width: 100%;
+  padding: 30px;
+  background: #005ea5;
+  color: #fff;
+  h1, p {
+    color: white;
+  }
+  .govuk-button {
+    background-color: white;
+    color: black;
+  }
+  .govuk-link {
+    color: white;
+  }
+}
+
+
+.govuk-table__cell-right {
+  text-align: right;
+}
+
+.display-right {
+  float:right;
+  a {
+    margin-right: 10px;
+  }
+  #last {
+    margin-right: 0px !important;
+  }
+}
+
+
+.action-panel {
+  margin-top:15px;
+  box-sizing: border-box;
+  background-color: #dee0e2;
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+  position: relative;
+  h2 {
+    width: 323px;
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+  h3 {
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+  button {
+    margin-bottom: 0px;
+    float: right;
+  }
+}
+
+
+.govuk-panel--confirmation {
+  background-color: #28a197;
+}

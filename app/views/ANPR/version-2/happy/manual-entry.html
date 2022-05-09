@@ -1,0 +1,59 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <span class="govuk-caption-l">MOT testing</span>
+        <h1 class="govuk-heading-l">Find a vehicle</h1>
+
+        <p class="govuk-body">Enter the Registration number and Vehicle Identification Number (VIN) to search for a vehicle. </p>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="one-third">
+            Registration number
+          </label>
+          <input class="govuk-input govuk-!-width-one-third" id="one-third" name="one-third" type="text">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="one-quarter">
+            VIN
+          </label>
+          <div id="event-name-hint" class="govuk-hint">
+            Enter the last 6 digits or the full VIN
+          </div>
+          <input class="govuk-input govuk-!-width-one-quarter" id="one-quarter" name="one-quarter" type="text">
+        </div>
+
+        <a href="select-car" class="govuk-button">Search</a>
+
+        <p><a href="manual-entry" class="govuk-link">Can’t provide the Registration number or VIN? </a></p>
+
+
+        <p><a href="start.html" class="govuk-link">Cancel and return home </a></p>
+
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,61 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-xl">DVSA</span>
+        <h1 class="govuk-heading-xl">MOT prototypes <strong class="govuk-tag govuk-tag--turquoise">2022</strong></h1>
+
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-m">Work in progress</h3>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li><p><a href="MOTR/motr-index" class="govuk-link">MOT reminders</a></p></li>
+          <li><p><a href="MOTH/start" class="govuk-link">MOT History</a></p></li>
+        </ul>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-m">In development</h3>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li><p><a href="ANPR/anpr-index" class="govuk-link">Camera's in garages (ANPR) discovery</a></p></li>
+          <li><p><a href="Replace-certificate/index" class="govuk-link">Replace a lost or damaged MOT certificate</a></p></li>
+          <li><p><a href="MOT/duplicate-drivers-licence-checks" class="govuk-link">Duplicate drivers licence checks</a></p></li>
+        </ul>
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-m">Live</h3>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li><p><a href="MOT/annual-assessment" class="govuk-link">Be able to easily identify Pass or Fail result of MOT testers annual assessment</a></p></li>
+          <li><p><a href="MTS/offsite-review" class="govuk-link">Offsite review</a></p></li>
+        </ul>
+
+
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+
+
+{% endblock %}

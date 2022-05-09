@@ -1,0 +1,54 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <span class="govuk-caption-l">MOT testing</span>
+      <h1 class="govuk-heading-l">Vehicles found</h1>
+
+      <p class="number"><span>1</span> vehicle found</p>
+
+      <div class="car-details">
+
+      <span class="govuk-caption-m">Vehicle</span>
+      <h1 class="govuk-heading-m">FORD FIESTA</h1>
+
+      <span class="govuk-caption-m">Registration number</span>
+      <br>
+      <p><span class="reg-mark" style="font-size:200%;margin-right:0.6em">
+        CU57&nbsp;ABC
+      </span></p>
+
+      <span class="govuk-caption-m">VIN</span>
+      <p class="govuk-body govuk-!-font-weight-bold">CBAAAAAAAAA0000028</p>
+
+      <span class="govuk-caption-m">Colour</span>
+
+      <p class="govuk-body govuk-!-font-weight-bold"><span class="colour-box">Re</span>Red</p>
+
+      <p class="govuk-body">2 tests, last tested 16 January 2021</p>
+
+      <a href="confirm-car" class="govuk-button">Select vehicle</a>
+
+      </div>
+
+
+
+
+
+    <p><a href="#" class="govuk-link">Search again</a></p>
+
+    <p><a href="#" class="govuk-link">Cancel and return home </a></p>
+
+  </div>
+
+  </div>
+
+{% endblock %}

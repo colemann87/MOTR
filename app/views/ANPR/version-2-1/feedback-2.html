@@ -1,0 +1,68 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <!-- <strong class="govuk-tag govuk-phase-banner__content__tag">
+        alpha
+      </strong> -->
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+  
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">Report an error</h1>
+
+        <div class="govuk-inset-text">
+          We can’t reply to your message, but feedback helps improve the service.
+        </div>
+
+        <div class="govuk-form-group">
+          <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="label-as-page-heading">
+              <p>  Do not include personal information.</p>
+              </label>
+              <!-- <div id="with-hint-hint" class="govuk-hint">
+                Do not include personal information about yourself, the testing site or the customer.
+              </div> -->
+              <textarea class="govuk-textarea govuk-js-character-count" id="label-as-page-heading" name="label-as-page-heading" rows="5" aria-describedby="label-as-page-heading-info"></textarea>
+            </div>
+            <div id="label-as-page-heading-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+              You can enter up to 200 characters
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <a href="find-car" class="govuk-button">Send feedback</a>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}

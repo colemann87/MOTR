@@ -1,0 +1,96 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+    <a href="#" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-xl">Prototypes</span>
+        <h1 class="govuk-heading-xl">MOT reminders</h1>
+
+
+
+        <div class="index-view-proto">
+          <h2 class="govuk-heading-m">Latest prototype for testing <strong class="govuk-tag govuk-tag--blue">
+          V.2.1
+        </strong></h2>
+
+
+          <a href="manage-reminders/v2-1/start" class="govuk-button">View your MOT reminders</a>
+
+        </div>
+
+        <h2 class="govuk-heading-m">History</h2>
+
+        <p>Previous user journeys for testing, highlighting the main differences.</p>
+
+        <p>Full design tracking can be <a href="" class="govuk-link">found here.</a></p>
+
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              V2 - Entry route: phone number / email address
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+
+            <h3 class="govuk-heading-s">Version 2.1</h3>
+
+            <p><a href="manage-reminders/v2-1/start">Prototype</a></p>
+
+            <p class="govuk-body">Differences:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>Adding a "I can't remember" journey to the contact details route</li>
+              <li>Adding the email address journey screens</li>
+              <li>Radio button routing for contact details screen</li>
+            </ul>
+
+
+            <h3 class="govuk-heading-s">Version 2</h3>
+
+            <p><a href="manage-reminders/v2/start">Prototype</a></p>
+
+            <p class="govuk-body">Differences:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>Using the users contact information as the entry route into the service.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              V1 - Entry route: registration number
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+
+            <h3 class="govuk-heading-s">Version 1</h3>
+
+            <p><a href="manage-reminders/v1/start">Prototype</a></p>
+
+          </div>
+        </details>
+
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+
+
+{% endblock %}

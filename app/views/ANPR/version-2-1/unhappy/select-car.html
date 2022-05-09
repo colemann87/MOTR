@@ -1,0 +1,122 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <!-- <strong class="govuk-tag govuk-phase-banner__content__tag">
+        alpha
+      </strong> -->
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <span class="govuk-caption-l">MOT testing</span>
+        <h1 class="govuk-heading-l">Vehicles found</h1>
+
+        <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon black" aria-hidden="true" style="background-color:black !important;
+          border-color:black !important;">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            Check the registration and the VIN number are correct
+          </strong>
+        </div>
+
+        <p class="govuk-body-l number"><span>1</span> vehicles found with registration <strong>GT93EJ3</strong>.</p>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <span class="govuk-caption-m">Vehicle</span>
+        <h1 class="govuk-heading-l">Ford Fiesta</h1>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+
+        <span class="govuk-caption-m" style="margin-bottom:5px;">Registration number</span>
+
+        <!-- <p><span class="reg-mark" style="font-size:200%;margin-right:0.6em">
+          CU57&nbsp;ABC
+        </span></p> -->
+          <p class="govuk-body govuk-!-font-weight-bold">GT93EJ3</p>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+
+        <span class="govuk-caption-m">VIN</span>
+        <p class="govuk-body govuk-!-font-weight-bold">CBAAAAAAAAA0000028</p>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+
+        <span class="govuk-caption-m">Colour</span>
+        <p class="govuk-body govuk-!-font-weight-bold"><span class="colour-box">Re</span>Red</p>
+
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <div class="car-details">
+
+          <p class="govuk-body">2 tests, last tested 16 January 2021</p>
+
+          <a href="confirm-car" class="govuk-button">Select vehicle</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+
+
+
+        <p><a href="#" class="govuk-link">Search again</a></p>
+
+        <p><a href="../feedback.html" class="govuk-link">Report a problem</a></p>
+
+        <p><a href="start.html" class="govuk-link">Cancel and return home </a></p>
+
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+{% endblock %}
